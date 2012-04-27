@@ -1,0 +1,13 @@
+DISCUSSION QUESTIONS
+
+Is this a good use of Object Oriented design? Why or why not?
+->Yes, the object of a "Process" is pretty well defined, splitting up the Child and Parent.
+
+How might you modify your Process class to allow the programmer an easy way to use different destrcuction policies?
+-> You could have if statements before the destruction happens. Also, you could have a check after the destruction to ensure no memory leaks.
+
+How might you handle the case when a child process terminates before the parent process destroies it? I.e. how might the parent be signaled when a child terminates, and then read in any data it has written to its output.
+-> You could have a BOOL variable flag that is set when a child terminates. Then check for the flag, and read the data if so.
+
+
+
